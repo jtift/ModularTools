@@ -1,7 +1,5 @@
 {
-  "itemGroup.modular_tools": "Example Mod Tab",
-  "block.modular_tools.example_block": "Example Block",
-  "item.modular_tools.example_item": "Example Item",
+  "item.modular_tools.modular_tool": "Modular Tool",
 
   "modular_tools.configuration.title": "Modular Tools  Configs",
   "modular_tools.configuration.section.modular_tools.common.toml": "Modular Tools  Configs",
