@@ -1,5 +1,8 @@
 {
   "item.modular_tools.modular_tool": "Modular Tool",
+  "item.modular_tools.iron_pickaxe_head": "Iron Pickaxe Head",
+  "item.modular_tools.wooden_handle": "Wooden Handle",
+  "item.modular_tools.wooden_binding": "Wooden Binding",
 
   "modular_tools.configuration.title": "Modular Tools  Configs",
   "modular_tools.configuration.section.modular_tools.common.toml": "Modular Tools  Configs",
