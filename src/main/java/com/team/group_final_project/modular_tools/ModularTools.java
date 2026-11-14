@@ -28,6 +28,8 @@ public class ModularTools {
         BLOCKS.register(modEventBus);
         // Register the mod's items
         ModItems.register(modEventBus);
+        //
+        ModDataComponents.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
     }

@@ -11,7 +11,8 @@ public class ModItems {
 
     public static final DeferredItem<ModularToolItem> MODULAR_TOOL =
             ITEMS.registerItem("modular_tool",
-                        properties -> new ModularToolItem(properties.stacksTo(1)));
+                        properties -> new ModularToolItem(properties.stacksTo(1)
+                                .component(ModDataComponents.MODULAR_TOOL_PARTS.get(),ModularToolParts.EMPTY)));
 
     public static final DeferredItem<ToolHeadItem> IRON_PICKAXE_HEAD =
             ITEMS.registerItem("iron_pickaxe_head",
