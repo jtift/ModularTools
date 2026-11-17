@@ -22,16 +22,11 @@ public class ModularToolAssembler {
             return false;
         }
 
-        return head.getPartType() == ToolPartType.HEAD
-                && handle.getPartType() == ToolPartType.HANDLE
-                && binding.getPartType() == ToolPartType.BINDING;
+        return head.getPartType() == ToolPartType.HEAD && handle.getPartType() == ToolPartType.HANDLE && binding.getPartType() == ToolPartType.BINDING;
     }
 
-    public static ModularToolParts createParts(
-            ItemStack headStack,
-            ItemStack handleStack,
-            ItemStack bindingStack
-    ) {
+    public static ModularToolParts createParts(ItemStack headStack, ItemStack handleStack, ItemStack bindingStack)
+    {
         if (!isValidAssembly(headStack, handleStack, bindingStack)) {
             return ModularToolParts.EMPTY;
         }
@@ -40,18 +35,10 @@ public class ModularToolAssembler {
         String handleId = BuiltInRegistries.ITEM.getKey(handleStack.getItem()).toString();
         String bindingId = BuiltInRegistries.ITEM.getKey(bindingStack.getItem()).toString();
 
-        return new ModularToolParts(
-                headId,
-                handleId,
-                bindingId
-        );
+        return new ModularToolParts(headId, handleId, bindingId);
     }
-    public static boolean assemble(
-            ItemStack toolStack,
-            ItemStack headStack,
-            ItemStack handleStack,
-            ItemStack bindingStack
-    ) {
+    public static boolean assemble(ItemStack toolStack, ItemStack headStack, ItemStack handleStack, ItemStack bindingStack)
+    {
         if (!(toolStack.getItem() instanceof ModularToolItem modularTool)) {
             return false;
         }
@@ -60,10 +47,13 @@ public class ModularToolAssembler {
             return false;
         }
 
-        ModularToolParts parts =
-                createParts(headStack, handleStack, bindingStack);
+        ModularToolParts parts = createParts(headStack, handleStack, bindingStack);
 
         modularTool.setParts(toolStack, parts);
+
+        if (parts.head().equals("modular_tools:iron_pickaxe_head")) {
+            modularTool.applyIronPickaxeBehavior(toolStack);
+        }
 
         return true;
     }
