@@ -1,5 +1,6 @@
 package com.team.group_final_project.modular_tools;
 
+import net.minecraft.world.item.BlockItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -25,6 +26,10 @@ public class ModItems {
     public static final DeferredItem<ToolBindingItem> WOODEN_BINDING =
             ITEMS.registerItem("wooden_binding",
                     properties -> new ToolBindingItem(properties, ToolMaterialType.WOOD));
+
+    public static final DeferredItem<BlockItem> ASSEMBLY_TABLE =
+            ITEMS.registerSimpleBlockItem("assembly_table", ModBlocks.ASSEMBLY_TABLE);
+
 
     public static void register(IEventBus modEventBus) {
         ITEMS.register(modEventBus);
