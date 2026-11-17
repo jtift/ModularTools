@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "modular_tools:block/assembly_table_top",
+    "front": "modular_tools:block/assembly_table_front",
+    "side": "modular_tools:block/assembly_table_side"
+  }
+}

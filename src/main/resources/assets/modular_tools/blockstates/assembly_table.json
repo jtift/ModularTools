@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "modular_tools:block/assembly_table"
+    },
+    "facing=east": {
+      "model": "modular_tools:block/assembly_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "modular_tools:block/assembly_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "modular_tools:block/assembly_table",
+      "y": 270
+    }
+  }
+}

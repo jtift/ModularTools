@@ -15,8 +15,8 @@ public class ModularTools {
     public static final String MODID = "modular_tools";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "modular_tools" namespace
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
+
+
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "modular_tools" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
@@ -25,10 +25,11 @@ public class ModularTools {
     public ModularTools(IEventBus modEventBus) {
 
         // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the mod's items
         ModItems.register(modEventBus);
-        //
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         ModDataComponents.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
