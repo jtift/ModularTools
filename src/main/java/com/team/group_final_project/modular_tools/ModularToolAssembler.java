@@ -51,8 +51,16 @@ public class ModularToolAssembler {
 
         modularTool.setParts(toolStack, parts);
 
-        if (parts.head().equals("modular_tools:iron_pickaxe_head")) {
-            modularTool.applyIronPickaxeBehavior(toolStack);
+        if (parts.head().contains("_pickaxe_head")) {
+            modularTool.applyPickaxeBehavior(toolStack, parts);
+        } else if (parts.head().contains("_axe_head")) {
+            modularTool.applyAxeBehavior(toolStack, parts);
+        } else if (parts.head().contains("_shovel_head")) {
+            modularTool.applyShovelBehavior(toolStack, parts);
+        } else if (parts.head().contains("_sword_head")) {
+            modularTool.applySwordBehavior(toolStack, parts);
+        } else if (parts.head().contains("_spear_head")) {
+            modularTool.applySpearBehavior(toolStack, parts);
         }
 
         return true;
