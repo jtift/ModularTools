@@ -25,38 +25,190 @@ public class ModularToolItem extends Item {
         stack.set(ModDataComponents.MODULAR_TOOL_PARTS.get(), parts);
     }
 
-    public void applyPickaxeBehavior(ItemStack stack) {
-        ItemStack ironPickaxe = new ItemStack(Items.IRON_PICKAXE);
+    // This will set the stats of the tool when there is a pickaxe head
+    public void applyPickaxeBehavior(ItemStack stack, ModularToolParts parts) {
+        // We need to check what the tool head is and set the stats accordingly
+        ItemStack toolStats;
 
-        copyComponent(ironPickaxe, stack, DataComponents.MAX_DAMAGE);
+        if (parts.head().contains("stone")) {
+            toolStats = new ItemStack(Items.STONE_PICKAXE);
+        } else if (parts.head().contains("copper")) {
+            toolStats = new ItemStack(Items.COPPER_PICKAXE);
+        } else if (parts.head().contains("gold")) {
+            toolStats = new ItemStack(Items.GOLDEN_PICKAXE);
+        } else if (parts.head().contains("iron")) {
+            toolStats = new ItemStack(Items.IRON_PICKAXE);
+        } else if (parts.head().contains("diamond")) {
+            toolStats = new ItemStack(Items.DIAMOND_PICKAXE);
+        } else if (parts.head().contains("netherite")) {
+            toolStats = new ItemStack(Items.NETHERITE_PICKAXE);
+        } else {
+            toolStats = new ItemStack(Items.WOODEN_PICKAXE);
+        }
 
-        copyComponent(ironPickaxe, stack, DataComponents.DAMAGE);
-
-        copyComponent(ironPickaxe, stack, DataComponents.REPAIRABLE);
-
-        copyComponent(ironPickaxe, stack, DataComponents.ENCHANTABLE);
-
-        copyComponent(ironPickaxe, stack, DataComponents.TOOL);
-
-        copyComponent(ironPickaxe, stack, DataComponents.ATTRIBUTE_MODIFIERS);
-
-        copyComponent(ironPickaxe, stack, DataComponents.WEAPON);
+        // Set the stats of the modular tool to the stats in the variable toolStats
+        copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.REPAIRABLE);
+        copyComponent(toolStats, stack, DataComponents.ENCHANTABLE);
+        copyComponent(toolStats, stack, DataComponents.ATTRIBUTE_MODIFIERS);
+        copyComponent(toolStats, stack, DataComponents.TOOL);
+        copyComponent(toolStats, stack, DataComponents.WEAPON);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
+        copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
     }
 
-    public void applyAxeBehavior(ItemStack stack) {
+    // This will set the stats of the tool when there is an axe head
+    public void applyAxeBehavior(ItemStack stack, ModularToolParts parts) {
+        // We need to check what the tool head is and set the stats accordingly
+        ItemStack toolStats;
 
+        if (parts.head().contains("stone")) {
+            toolStats = new ItemStack(Items.STONE_AXE);
+        } else if (parts.head().contains("copper")) {
+            toolStats = new ItemStack(Items.COPPER_AXE);
+        } else if (parts.head().contains("gold")) {
+            toolStats = new ItemStack(Items.GOLDEN_AXE);
+        } else if (parts.head().contains("iron")) {
+            toolStats = new ItemStack(Items.IRON_AXE);
+        } else if (parts.head().contains("diamond")) {
+            toolStats = new ItemStack(Items.DIAMOND_AXE);
+        } else if (parts.head().contains("netherite")) {
+            toolStats = new ItemStack(Items.NETHERITE_AXE);
+        } else {
+            toolStats = new ItemStack(Items.WOODEN_AXE);
+        }
+
+
+        // Set the stats of the modular tool to the stats in the variable toolStats
+        copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.REPAIRABLE);
+        copyComponent(toolStats, stack, DataComponents.ENCHANTABLE);
+        copyComponent(toolStats, stack, DataComponents.ATTRIBUTE_MODIFIERS);
+        copyComponent(toolStats, stack, DataComponents.TOOL);
+        copyComponent(toolStats, stack, DataComponents.WEAPON);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
+        copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
     }
 
-    public void applyShovelBehavior(ItemStack stack) {
+    // This will set the stats of the tool when there is a shovel head
+    public void applyShovelBehavior(ItemStack stack, ModularToolParts parts) {
+        // We need to check what the tool head is and set the stats accordingly
+        ItemStack toolStats;
 
+        if (parts.head().contains("stone")) {
+            toolStats = new ItemStack(Items.STONE_SHOVEL);
+        } else if (parts.head().contains("copper")) {
+            toolStats = new ItemStack(Items.COPPER_SHOVEL);
+        } else if (parts.head().contains("gold")) {
+            toolStats = new ItemStack(Items.GOLDEN_SHOVEL);
+        } else if (parts.head().contains("iron")) {
+            toolStats = new ItemStack(Items.IRON_SHOVEL);
+        } else if (parts.head().contains("diamond")) {
+            toolStats = new ItemStack(Items.DIAMOND_SHOVEL);
+        } else if (parts.head().contains("netherite")) {
+            toolStats = new ItemStack(Items.NETHERITE_SHOVEL);
+        } else {
+            toolStats = new ItemStack(Items.WOODEN_SHOVEL);
+        }
+
+        // Set the stats of the modular tool to the stats in the variable toolStats
+        copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.REPAIRABLE);
+        copyComponent(toolStats, stack, DataComponents.ENCHANTABLE);
+        copyComponent(toolStats, stack, DataComponents.ATTRIBUTE_MODIFIERS);
+        copyComponent(toolStats, stack, DataComponents.TOOL);
+        copyComponent(toolStats, stack, DataComponents.WEAPON);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
+        copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
     }
 
-    public void applySwordBehavior(ItemStack stack) {
+    // This will set the stats of the tool when there is a sword head
+    public void applySwordBehavior(ItemStack stack, ModularToolParts parts) {
+        // We need to check what the tool head is and set the stats accordingly
+        ItemStack toolStats;
 
+        if (parts.head().contains("stone")) {
+            toolStats = new ItemStack(Items.STONE_SWORD);
+        } else if (parts.head().contains("copper")) {
+            toolStats = new ItemStack(Items.COPPER_SWORD);
+        } else if (parts.head().contains("gold")) {
+            toolStats = new ItemStack(Items.GOLDEN_SWORD);
+        } else if (parts.head().contains("iron")) {
+            toolStats = new ItemStack(Items.IRON_SWORD);
+        } else if (parts.head().contains("diamond")) {
+            toolStats = new ItemStack(Items.DIAMOND_SWORD);
+        } else if (parts.head().contains("netherite")) {
+            toolStats = new ItemStack(Items.NETHERITE_SWORD);
+        } else {
+            toolStats = new ItemStack(Items.WOODEN_SWORD);
+        }
+
+        // Set the stats of the modular tool to the stats in the variable toolStats
+        copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.REPAIRABLE);
+        copyComponent(toolStats, stack, DataComponents.ENCHANTABLE);
+        copyComponent(toolStats, stack, DataComponents.ATTRIBUTE_MODIFIERS);
+        copyComponent(toolStats, stack, DataComponents.TOOL);
+        copyComponent(toolStats, stack, DataComponents.WEAPON);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
+        copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
     }
 
-    public void applySpearBehavior(ItemStack stack) {
+    // This will set the stats of the tool when there is a spear head
+    public void applySpearBehavior(ItemStack stack, ModularToolParts parts) {
+        // We need to check what the tool head is and set the stats accordingly
+        ItemStack toolStats;
 
+        if (parts.head().contains("stone")) {
+            toolStats = new ItemStack(Items.STONE_SPEAR);
+        } else if (parts.head().contains("copper")) {
+            toolStats = new ItemStack(Items.COPPER_SPEAR);
+        } else if (parts.head().contains("gold")) {
+            toolStats = new ItemStack(Items.GOLDEN_SPEAR);
+        } else if (parts.head().contains("iron")) {
+            toolStats = new ItemStack(Items.IRON_SPEAR);
+        } else if (parts.head().contains("diamond")) {
+            toolStats = new ItemStack(Items.DIAMOND_SPEAR);
+        } else if (parts.head().contains("netherite")) {
+            toolStats = new ItemStack(Items.NETHERITE_SPEAR);
+        } else {
+            toolStats = new ItemStack(Items.WOODEN_SPEAR);
+        }
+
+        // Set the stats of the modular tool to the stats in the variable toolStats
+        copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE);
+        copyComponent(toolStats, stack, DataComponents.REPAIRABLE);
+        copyComponent(toolStats, stack, DataComponents.ENCHANTABLE);
+        copyComponent(toolStats, stack, DataComponents.ATTRIBUTE_MODIFIERS);
+        copyComponent(toolStats, stack, DataComponents.TOOL);
+        copyComponent(toolStats, stack, DataComponents.WEAPON);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
+        copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
+        copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
+        copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
     }
 
     private <T> void copyComponent(ItemStack source, ItemStack target, DataComponentType<T> componentType)

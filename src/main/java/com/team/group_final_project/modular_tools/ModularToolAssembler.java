@@ -52,15 +52,15 @@ public class ModularToolAssembler {
         modularTool.setParts(toolStack, parts);
 
         if (parts.head().contains("_pickaxe_head")) {
-            modularTool.applyPickaxeBehavior(toolStack);
+            modularTool.applyPickaxeBehavior(toolStack, parts);
         } else if (parts.head().contains("_axe_head")) {
-            modularTool.applyAxeBehavior(toolStack);
+            modularTool.applyAxeBehavior(toolStack, parts);
         } else if (parts.head().contains("_shovel_head")) {
-            modularTool.applyShovelBehavior(toolStack);
+            modularTool.applyShovelBehavior(toolStack, parts);
         } else if (parts.head().contains("_sword_head")) {
-            modularTool.applySwordBehavior(toolStack);
+            modularTool.applySwordBehavior(toolStack, parts);
         } else if (parts.head().contains("_spear_head")) {
-            modularTool.applySpearBehavior(toolStack);
+            modularTool.applySpearBehavior(toolStack, parts);
         }
 
         return true;
