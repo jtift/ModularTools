@@ -46,6 +46,10 @@ public class ModularToolItem extends Item {
             toolStats = new ItemStack(Items.WOODEN_PICKAXE);
         }
 
+        // Now we need to check what material the binding is made of to add extra durability
+        applyBindingBuffs(toolStats, parts);
+        applyHandleBuffs(toolStats, parts);
+
         // Set the stats of the modular tool to the stats in the variable toolStats
         copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
         copyComponent(toolStats, stack, DataComponents.DAMAGE);
@@ -83,6 +87,9 @@ public class ModularToolItem extends Item {
             toolStats = new ItemStack(Items.WOODEN_AXE);
         }
 
+        // Now we need to check what material the binding is made of to add extra durability
+        applyBindingBuffs(toolStats, parts);
+        applyHandleBuffs(toolStats, parts);
 
         // Set the stats of the modular tool to the stats in the variable toolStats
         copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
@@ -121,6 +128,10 @@ public class ModularToolItem extends Item {
             toolStats = new ItemStack(Items.WOODEN_SHOVEL);
         }
 
+        // Now we need to check what material the binding is made of to add extra durability
+        applyBindingBuffs(toolStats, parts);
+        applyHandleBuffs(toolStats, parts);
+
         // Set the stats of the modular tool to the stats in the variable toolStats
         copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
         copyComponent(toolStats, stack, DataComponents.DAMAGE);
@@ -157,6 +168,10 @@ public class ModularToolItem extends Item {
         } else {
             toolStats = new ItemStack(Items.WOODEN_SWORD);
         }
+
+        // Now we need to check what material the binding is made of to add extra durability
+        applyBindingBuffs(toolStats, parts);
+        applyHandleBuffs(toolStats, parts);
 
         // Set the stats of the modular tool to the stats in the variable toolStats
         copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
@@ -195,6 +210,10 @@ public class ModularToolItem extends Item {
             toolStats = new ItemStack(Items.WOODEN_SPEAR);
         }
 
+        // Now we need to check what material the binding is made of to add extra durability
+        applyBindingBuffs(toolStats, parts);
+        applyHandleBuffs(toolStats, parts);
+
         // Set the stats of the modular tool to the stats in the variable toolStats
         copyComponent(toolStats, stack, DataComponents.MAX_DAMAGE);
         copyComponent(toolStats, stack, DataComponents.DAMAGE);
@@ -209,6 +228,36 @@ public class ModularToolItem extends Item {
         copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
         copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
         copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
+    }
+
+    private void applyBindingBuffs(ItemStack toolStats, ModularToolParts parts)
+    {
+        if (parts.binding().contains("stone")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 50);
+        } else if (parts.binding().contains("copper")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 100);
+        } else if (parts.binding().contains("iron")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 150);
+        } else if (parts.binding().contains("diamond")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 400);
+        } else if (parts.binding().contains("netherite")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 800);
+        }
+    }
+
+    private void applyHandleBuffs(ItemStack toolStats, ModularToolParts parts)
+    {
+        if (parts.handle().contains("stone")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 50);
+        } else if (parts.handle().contains("copper")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 100);
+        } else if (parts.handle().contains("iron")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 150);
+        } else if (parts.handle().contains("diamond")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 400);
+        } else if (parts.handle().contains("netherite")) {
+            toolStats.set(DataComponents.MAX_DAMAGE, toolStats.get(DataComponents.MAX_DAMAGE) + 800);
+        }
     }
 
     private <T> void copyComponent(ItemStack source, ItemStack target, DataComponentType<T> componentType)
