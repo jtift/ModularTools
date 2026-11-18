@@ -25,7 +25,7 @@ public class ModularToolItem extends Item {
         stack.set(ModDataComponents.MODULAR_TOOL_PARTS.get(), parts);
     }
 
-    public void applyIronPickaxeBehavior(ItemStack stack) {
+    public void applyPickaxeBehavior(ItemStack stack) {
         ItemStack ironPickaxe = new ItemStack(Items.IRON_PICKAXE);
 
         copyComponent(ironPickaxe, stack, DataComponents.MAX_DAMAGE);
@@ -41,6 +41,22 @@ public class ModularToolItem extends Item {
         copyComponent(ironPickaxe, stack, DataComponents.ATTRIBUTE_MODIFIERS);
 
         copyComponent(ironPickaxe, stack, DataComponents.WEAPON);
+    }
+
+    public void applyAxeBehavior(ItemStack stack) {
+
+    }
+
+    public void applyShovelBehavior(ItemStack stack) {
+
+    }
+
+    public void applySwordBehavior(ItemStack stack) {
+
+    }
+
+    public void applySpearBehavior(ItemStack stack) {
+
     }
 
     private <T> void copyComponent(ItemStack source, ItemStack target, DataComponentType<T> componentType)
