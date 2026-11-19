@@ -142,6 +142,28 @@ public class ModItems {
             ITEMS.registerItem("netherite_handle",
                     properties -> new ToolHandleItem(properties, ToolMaterialType.NETHERITE));
 
+    //Add the different tiers of Sword Heads
+    public static final DeferredItem<ToolHeadItem> WOODEN_SWORD_HEAD =
+            ITEMS.registerItem("wooden_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.WOOD));
+
+    public static final DeferredItem<ToolHeadItem> STONE_SWORD_HEAD =
+            ITEMS.registerItem("stone_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.STONE));
+
+    public static final DeferredItem<ToolHeadItem> COPPER_SWORD_HEAD =
+            ITEMS.registerItem("copper_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.COPPER));
+
+    public static final DeferredItem<ToolHeadItem> IRON_SWORD_HEAD =
+            ITEMS.registerItem("iron_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.IRON));
+
+    public static final DeferredItem<ToolHeadItem> GOLD_SWORD_HEAD =
+            ITEMS.registerItem("gold_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.GOLD));
+
+    public static final DeferredItem<ToolHeadItem> DIAMOND_SWORD_HEAD =
+            ITEMS.registerItem("diamond_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.DIAMOND));
+
+    public static final DeferredItem<ToolHeadItem> NETHERITE_SWORD_HEAD =
+            ITEMS.registerItem("netherite_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.NETHERITE));
+
     // Add the different tiers of bindings
     public static final DeferredItem<ToolBindingItem> WOODEN_BINDING =
             ITEMS.registerItem("wooden_binding",

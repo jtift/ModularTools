@@ -33,6 +33,14 @@
   "item.modular_tools.gold_shovel_head": "Gold Shovel Head",
   "item.modular_tools.diamond_shovel_head": "Diamond Shovel Head",
   "item.modular_tools.netherite_shovel_head": "Netherite Shovel Head",
+  //Modular Tool Sword Heads
+  "item.modular_tools.wooden_sword_head": "Wooden Sword Head",
+  "item.modular_tools.stone_sword_head": "Stone Sword Head",
+  "item.modular_tools.copper_sword_head": "Copper Sword Head",
+  "item.modular_tools.iron_sword_head": "Iron Sword Head",
+  "item.modular_tools.gold_sword_head": "Gold Sword Head",
+  "item.modular_tools.diamond_sword_head": "Diamond Sword Head",
+  "item.modular_tools.netherite_sword_head": "Netherite Sword Head",
   //Modular Tool Handles
   "item.modular_tools.wooden_handle": "Wooden Handle",
   "item.modular_tools.stone_handle": "Stone Handle",
