@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "W",
+    "W",
+    "C"
+  ],
+  "key": {
+    "W": "minecraft:oak_planks",
+    "C": "minecraft:coal"
+  },
+  "result": {
+    "id": "modular_tools:wooden_sword_head",
+    "count": 1
+  }
+}

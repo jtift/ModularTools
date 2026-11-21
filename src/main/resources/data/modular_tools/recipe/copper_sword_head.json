@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "U",
+    "U",
+    "C"
+  ],
+  "key": {
+    "U": "minecraft:copper_ingot",
+    "C": "minecraft:coal"
+  },
+  "result": {
+    "id": "modular_tools:copper_sword_head",
+    "count": 1
+  }
+}

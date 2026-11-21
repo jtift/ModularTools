@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "SS",
+    "SF"
+  ],
+  "key": {
+    "S": "minecraft:cobblestone",
+    "F": "minecraft:flint"
+  },
+  "result": {
+    "id": "modular_tools:stone_axe_head",
+    "count": 1
+  }
+}

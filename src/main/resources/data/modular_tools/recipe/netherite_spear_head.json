@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " N",
+    "NC"
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "C": "minecraft:coal"
+  },
+  "result": {
+    "id": "modular_tools:netherite_spear_head",
+    "count": 1
+  }
+}

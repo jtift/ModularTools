@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DD",
+    " S"
+  ],
+  "key": {
+    "D": "minecraft:diamond",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "modular_tools:diamond_binding",
+    "count": 1
+  }
+}

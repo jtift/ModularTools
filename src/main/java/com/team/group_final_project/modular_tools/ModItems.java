@@ -33,8 +33,8 @@ public class ModItems {
             ITEMS.registerItem("iron_pickaxe_head",
                     properties -> new ToolHeadItem(properties, ToolHeadType.PICKAXE, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHeadItem> GOLD_PICKAXE_HEAD =
-            ITEMS.registerItem("gold_pickaxe_head",
+    public static final DeferredItem<ToolHeadItem> GOLDEN_PICKAXE_HEAD =
+            ITEMS.registerItem("golden_pickaxe_head",
                     properties -> new ToolHeadItem(properties, ToolHeadType.PICKAXE, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHeadItem> DIAMOND_PICKAXE_HEAD =
@@ -58,8 +58,8 @@ public class ModItems {
     public static final DeferredItem<ToolHeadItem> IRON_AXE_HEAD =
             ITEMS.registerItem("iron_axe_head", properties -> new ToolHeadItem(properties, ToolHeadType.AXE, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHeadItem> GOLD_AXE_HEAD =
-            ITEMS.registerItem("gold_axe_head",
+    public static final DeferredItem<ToolHeadItem> GOLDEN_AXE_HEAD =
+            ITEMS.registerItem("golden_axe_head",
                     properties -> new ToolHeadItem(properties, ToolHeadType.AXE, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHeadItem> DIAMOND_AXE_HEAD =
@@ -82,8 +82,8 @@ public class ModItems {
     public static final DeferredItem<ToolHeadItem> IRON_SPEAR_HEAD =
             ITEMS.registerItem("iron_spear_head", properties -> new ToolHeadItem(properties, ToolHeadType.SPEAR, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHeadItem> GOLD_SPEAR_HEAD =
-            ITEMS.registerItem("gold_spear_head", properties -> new ToolHeadItem(properties, ToolHeadType.SPEAR, ToolMaterialType.GOLD));
+    public static final DeferredItem<ToolHeadItem> GOLDEN_SPEAR_HEAD =
+            ITEMS.registerItem("golden_spear_head", properties -> new ToolHeadItem(properties, ToolHeadType.SPEAR, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHeadItem> DIAMOND_SPEAR_HEAD =
             ITEMS.registerItem("diamond_spear_head", properties -> new ToolHeadItem(properties, ToolHeadType.SPEAR, ToolMaterialType.DIAMOND));
@@ -104,8 +104,8 @@ public class ModItems {
     public static final DeferredItem<ToolHeadItem> IRON_SHOVEL_HEAD =
             ITEMS.registerItem("iron_shovel_head", properties -> new ToolHeadItem(properties, ToolHeadType.SHOVEL, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHeadItem> GOLD_SHOVEL_HEAD =
-            ITEMS.registerItem("gold_shovel_head", properties -> new ToolHeadItem(properties, ToolHeadType.SHOVEL, ToolMaterialType.GOLD));
+    public static final DeferredItem<ToolHeadItem> GOLDEN_SHOVEL_HEAD =
+            ITEMS.registerItem("golden_shovel_head", properties -> new ToolHeadItem(properties, ToolHeadType.SHOVEL, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHeadItem> DIAMOND_SHOVEL_HEAD =
             ITEMS.registerItem("diamond_shovel_head", properties -> new ToolHeadItem(properties, ToolHeadType.SHOVEL, ToolMaterialType.DIAMOND));
@@ -130,8 +130,8 @@ public class ModItems {
             ITEMS.registerItem("iron_handle",
                     properties -> new ToolHandleItem(properties, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHandleItem> GOLD_HANDLE =
-            ITEMS.registerItem("gold_handle",
+    public static final DeferredItem<ToolHandleItem> GOLDEN_HANDLE =
+            ITEMS.registerItem("golden_handle",
                     properties -> new ToolHandleItem(properties, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHandleItem> DIAMOND_HANDLE =
@@ -155,8 +155,8 @@ public class ModItems {
     public static final DeferredItem<ToolHeadItem> IRON_SWORD_HEAD =
             ITEMS.registerItem("iron_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolHeadItem> GOLD_SWORD_HEAD =
-            ITEMS.registerItem("gold_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.GOLD));
+    public static final DeferredItem<ToolHeadItem> GOLDEN_SWORD_HEAD =
+            ITEMS.registerItem("golden_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolHeadItem> DIAMOND_SWORD_HEAD =
             ITEMS.registerItem("diamond_sword_head", properties -> new ToolHeadItem(properties, ToolHeadType.SWORD, ToolMaterialType.DIAMOND));
@@ -181,8 +181,8 @@ public class ModItems {
             ITEMS.registerItem("iron_binding",
                     properties -> new ToolBindingItem(properties, ToolMaterialType.IRON));
 
-    public static final DeferredItem<ToolBindingItem> GOLD_BINDING =
-            ITEMS.registerItem("gold_binding",
+    public static final DeferredItem<ToolBindingItem> GOLDEN_BINDING =
+            ITEMS.registerItem("golden_binding",
                     properties -> new ToolBindingItem(properties, ToolMaterialType.GOLD));
 
     public static final DeferredItem<ToolBindingItem> DIAMOND_BINDING =
