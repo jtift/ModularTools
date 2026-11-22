@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "modular_tools:item/gold_shovel_head"
+    "layer0": "modular_tools:item/golden_binding"
   }
 }

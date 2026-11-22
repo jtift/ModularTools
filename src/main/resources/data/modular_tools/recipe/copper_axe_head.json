@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "CC",
+    "CF"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "F": "minecraft:flint"
+  },
+  "result": {
+    "id": "modular_tools:copper_axe_head",
+    "count": 1
+  }
+}

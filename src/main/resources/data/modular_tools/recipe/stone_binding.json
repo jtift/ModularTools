@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CC",
+    " S"
+  ],
+  "key": {
+    "C": "minecraft:cobblestone",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "modular_tools:stone_binding",
+    "count": 1
+  }
+}

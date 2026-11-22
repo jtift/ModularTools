@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NN",
+    " S"
+  ],
+  "key": {
+    "N": "minecraft:netherite_ingot",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "modular_tools:netherite_binding",
+    "count": 1
+  }
+}

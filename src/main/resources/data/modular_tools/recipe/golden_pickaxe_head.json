@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "GGG",
+    " F "
+  ],
+  "key": {
+    "G": "minecraft:gold_ingot",
+    "F": "minecraft:flint"
+  },
+  "result": {
+    "id": "modular_tools:golden_pickaxe_head",
+    "count": 1
+  }
+}

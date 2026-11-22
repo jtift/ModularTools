@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " D",
+    "D "
+  ],
+  "key": {
+    "D": "minecraft:diamond"
+  },
+  "result": {
+    "id": "modular_tools:diamond_handle",
+    "count": 1
+  }
+}

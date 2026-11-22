@@ -1,11 +1,13 @@
 {
   //Modular Tool
   "item.modular_tools.modular_tool": "Modular Tool",
+  //Modular Tool In Creative Mode
+  "creativetab.modular_tools": "Modular Tools",
   //Modular Tool Pickaxe Heads
   "item.modular_tools.wooden_pickaxe_head": "Wooden Pickaxe Head",
   "item.modular_tools.stone_pickaxe_head": "Stone Pickaxe Head",
   "item.modular_tools.copper_pickaxe_head": "Copper Pickaxe Head",
-  "item.modular_tools.gold_pickaxe_head": "Gold Pickaxe Head",
+  "item.modular_tools.golden_pickaxe_head": "Golden Pickaxe Head",
   "item.modular_tools.iron_pickaxe_head": "Iron Pickaxe Head",
   "item.modular_tools.diamond_pickaxe_head": "Diamond Pickaxe Head",
   "item.modular_tools.netherite_pickaxe_head": "Netherite Pickaxe Head",
@@ -14,7 +16,7 @@
   "item.modular_tools.stone_axe_head": "Stone Axe Head",
   "item.modular_tools.copper_axe_head": "Copper Axe Head",
   "item.modular_tools.iron_axe_head": "Iron Axe Head",
-  "item.modular_tools.gold_axe_head": "Gold Axe Head",
+  "item.modular_tools.golden_axe_head": "Golden Axe Head",
   "item.modular_tools.diamond_axe_head": "Diamond Axe Head",
   "item.modular_tools.netherite_axe_head": "Netherite Axe Head",
   //Modular Tool Spear Heads
@@ -22,7 +24,7 @@
   "item.modular_tools.stone_spear_head": "Stone Spear Head",
   "item.modular_tools.copper_spear_head": "Copper Spear Head",
   "item.modular_tools.iron_spear_head": "Iron Spear Head",
-  "item.modular_tools.gold_spear_head": "Gold Spear Head",
+  "item.modular_tools.golden_spear_head": "Golden Spear Head",
   "item.modular_tools.diamond_spear_head": "Diamond Spear Head",
   "item.modular_tools.netherite_spear_head": "Netherite Spear Head",
   //Modular Tool Shovel Heads
@@ -30,7 +32,7 @@
   "item.modular_tools.stone_shovel_head": "Stone Shovel Head",
   "item.modular_tools.copper_shovel_head": "Copper Shovel Head",
   "item.modular_tools.iron_shovel_head": "Iron Shovel Head",
-  "item.modular_tools.gold_shovel_head": "Gold Shovel Head",
+  "item.modular_tools.golden_shovel_head": "Golden Shovel Head",
   "item.modular_tools.diamond_shovel_head": "Diamond Shovel Head",
   "item.modular_tools.netherite_shovel_head": "Netherite Shovel Head",
   //Modular Tool Sword Heads
@@ -38,14 +40,14 @@
   "item.modular_tools.stone_sword_head": "Stone Sword Head",
   "item.modular_tools.copper_sword_head": "Copper Sword Head",
   "item.modular_tools.iron_sword_head": "Iron Sword Head",
-  "item.modular_tools.gold_sword_head": "Gold Sword Head",
+  "item.modular_tools.golden_sword_head": "Golden Sword Head",
   "item.modular_tools.diamond_sword_head": "Diamond Sword Head",
   "item.modular_tools.netherite_sword_head": "Netherite Sword Head",
   //Modular Tool Handles
   "item.modular_tools.wooden_handle": "Wooden Handle",
   "item.modular_tools.stone_handle": "Stone Handle",
   "item.modular_tools.copper_handle": "Copper Handle",
-  "item.modular_tools.gold_handle": "Gold Handle",
+  "item.modular_tools.golden_handle": "Golden Handle",
   "item.modular_tools.iron_handle": "Iron Handle",
   "item.modular_tools.diamond_handle": "Diamond Handle",
   "item.modular_tools.netherite_handle": "Netherite Handle",
@@ -53,7 +55,7 @@
   "item.modular_tools.wooden_binding": "Wooden Binding",
   "item.modular_tools.stone_binding": "Stone Binding",
   "item.modular_tools.copper_binding": "Copper Binding",
-  "item.modular_tools.gold_binding": "Gold Binding",
+  "item.modular_tools.golden_binding": "Golden Binding",
   "item.modular_tools.iron_binding": "Iron Binding",
   "item.modular_tools.diamond_binding": "Diamond Binding",
   "item.modular_tools.netherite_binding": "Netherite Binding",
