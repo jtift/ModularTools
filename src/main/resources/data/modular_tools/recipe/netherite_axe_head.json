@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "NN",
-    "NF"
+    "NC"
   ],
   "key": {
     "N": "minecraft:netherite_ingot",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:netherite_axe_head",

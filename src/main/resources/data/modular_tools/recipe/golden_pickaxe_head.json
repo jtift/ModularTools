@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "GGG",
-    " F "
+    " C "
   ],
   "key": {
     "G": "minecraft:gold_ingot",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:golden_pickaxe_head",

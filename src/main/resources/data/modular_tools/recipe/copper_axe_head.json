@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "CC",
-    "CF"
+    "CL"
   ],
   "key": {
     "C": "minecraft:copper_ingot",
-    "F": "minecraft:flint"
+    "L": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:copper_axe_head",

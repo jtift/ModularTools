@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "CCC",
-    " F "
+    " L "
   ],
   "key": {
     "C": "minecraft:copper_ingot",
-    "F": "minecraft:flint"
+    "L": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:copper_pickaxe_head",

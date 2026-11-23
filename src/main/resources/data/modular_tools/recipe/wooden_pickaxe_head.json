@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "PPP",
-    " F "
+    " C "
   ],
   "key": {
     "P": "minecraft:oak_planks",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:wooden_pickaxe_head",

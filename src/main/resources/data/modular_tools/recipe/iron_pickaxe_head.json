@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "III",
-    " F "
+    " C "
   ],
   "key": {
     "I": "minecraft:iron_ingot",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:iron_pickaxe_head",

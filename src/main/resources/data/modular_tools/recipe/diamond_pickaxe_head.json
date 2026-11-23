@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "DDD",
-    " F "
+    " C "
   ],
   "key": {
     "D": "minecraft:diamond",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:diamond_pickaxe_head",

@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "SS",
-    "SF"
+    "SC"
   ],
   "key": {
     "S": "minecraft:cobblestone",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:stone_axe_head",

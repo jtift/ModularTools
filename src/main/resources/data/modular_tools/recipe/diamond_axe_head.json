@@ -3,11 +3,11 @@
   "category": "equipment",
   "pattern": [
     "DD",
-    "DF"
+    "DC"
   ],
   "key": {
     "D": "minecraft:diamond",
-    "F": "minecraft:flint"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:diamond_axe_head",
