@@ -3,11 +3,11 @@
   "category": "misc",
   "pattern": [
     "DD",
-    " S"
+    " C"
   ],
   "key": {
     "D": "minecraft:diamond",
-    "S": "minecraft:string"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:diamond_binding",

@@ -3,11 +3,11 @@
   "category": "misc",
   "pattern": [
     "NN",
-    " S"
+    " C"
   ],
   "key": {
     "N": "minecraft:netherite_ingot",
-    "S": "minecraft:string"
+    "C": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:netherite_binding",

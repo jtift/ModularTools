@@ -3,11 +3,11 @@
   "category": "misc",
   "pattern": [
     "CC",
-    " S"
+    " L"
   ],
   "key": {
     "C": "minecraft:copper_ingot",
-    "S": "minecraft:string"
+    "L": "minecraft:coal"
   },
   "result": {
     "id": "modular_tools:copper_binding",
