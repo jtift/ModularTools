@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "modular_tools:item/copper_axe_layer"
+  }
+}

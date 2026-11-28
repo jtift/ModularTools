@@ -225,6 +225,7 @@ public class ModularToolItem extends Item {
         copyComponent(toolStats, stack, DataComponents.ATTACK_RANGE);
         copyComponent(toolStats, stack, DataComponents.DAMAGE_TYPE);
         copyComponent(toolStats, stack, DataComponents.MINIMUM_ATTACK_CHARGE);
+        copyComponent(toolStats, stack, DataComponents.ATTACK_ANIMATION);
         copyComponent(toolStats, stack, DataComponents.PIERCING_WEAPON);
         copyComponent(toolStats, stack, DataComponents.KINETIC_WEAPON);
         copyComponent(toolStats, stack, DataComponents.USE_EFFECTS);
