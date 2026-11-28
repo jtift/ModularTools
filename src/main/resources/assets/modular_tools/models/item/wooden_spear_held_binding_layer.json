@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/spear_in_hand",
+  "textures": {
+    "layer0": "modular_tools:item/wooden_spear_held_binding_layer"
+  }
+}

@@ -21,7 +21,13 @@ public class AssemblyTableBlockEntity extends BlockEntity implements MenuProvide
     public static final int HANDLE_SLOT = 2;
     public static final int BINDING_SLOT = 3;
 
-    private final SimpleContainer inventory = new SimpleContainer(4);
+    private final SimpleContainer inventory = new SimpleContainer(4) {
+        @Override
+        public void setChanged() {
+            super.setChanged();
+            AssemblyTableBlockEntity.this.setChanged();
+        }
+    };
 
     public AssemblyTableBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.ASSEMBLY_TABLE.get(), pos, state);

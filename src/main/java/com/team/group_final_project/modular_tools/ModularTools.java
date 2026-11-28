@@ -3,7 +3,9 @@ package com.team.group_final_project.modular_tools;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
+import net.neoforged.neoforge.client.event.RegisterSelectItemModelPropertyEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -95,10 +97,28 @@ public class ModularTools {
                             })
                             .build());
 
+    private static void registerSelectItemModelProperties(RegisterSelectItemModelPropertyEvent event)
+    {
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_parts"), ModularToolModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_head"), ModularToolHeadModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_handle"), ModularToolHandleModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_binding"), ModularToolBindingModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_shovel"), ModularToolIsShovelModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_sword"), ModularToolsIsSwordModelProperty.TYPE);
+
+        event.register(Identifier.fromNamespaceAndPath(MODID, "modular_tool_spear"),ModularToolsIsSpearProperty.TYPE);
+    }
+
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public ModularTools(IEventBus modEventBus) {
 
+        modEventBus.addListener(ModularTools::registerSelectItemModelProperties);
         // Register the Deferred Register to the mod event bus so blocks get registered
         ModBlocks.register(modEventBus);
         // Register the mod's items

@@ -1,6 +1,1184 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "modular_tools:item/modular_tool"
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:select",
+        "property": "modular_tools:modular_tool_spear",
+        "fallback": {
+          "type": "minecraft:select",
+          "property": "modular_tools:modular_tool_sword",
+          "fallback": {
+            "type": "minecraft:select",
+            "property": "modular_tools:modular_tool_shovel",
+            "fallback": {
+              "type": "minecraft:select",
+              "property": "modular_tools:modular_tool_handle",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/modular_tool"
+              },
+              "cases": [
+                {
+                  "when": "modular_tools:wooden_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/wooden_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:stone_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/stone_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:copper_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/copper_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:iron_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/iron_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:golden_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/golden_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:diamond_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/diamond_handle_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:netherite_handle",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/netherite_handle_layer"
+                  }
+                }
+              ]
+            },
+            "cases": [
+              {
+                "when": "standard",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "modular_tools:modular_tool_handle",
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/modular_tool"
+                  },
+                  "cases": [
+                    {
+                      "when": "modular_tools:wooden_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/wooden_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:stone_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/stone_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:copper_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/copper_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:iron_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/iron_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:golden_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/golden_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:diamond_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/diamond_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:netherite_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/netherite_handle_layer"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "when": "shovel",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "modular_tools:modular_tool_handle",
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/modular_tool"
+                  },
+                  "cases": [
+                    {
+                      "when": "modular_tools:wooden_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/wooden_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:stone_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/stone_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:copper_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/copper_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:iron_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/iron_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:golden_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/golden_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:diamond_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/diamond_shovel_handle_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:netherite_handle",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/netherite_shovel_handle_layer"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "cases": [
+            {
+              "when": "sword",
+              "model": {
+                "type": "minecraft:select",
+                "property": "modular_tools:modular_tool_handle",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "modular_tools:item/modular_tool"
+                },
+                "cases": [
+                  {
+                    "when": "modular_tools:wooden_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/wooden_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:stone_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/stone_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:copper_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/copper_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:iron_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/iron_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:golden_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/golden_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:diamond_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/diamond_sword_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:netherite_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/netherite_sword_handle_layer"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "cases": [
+          {
+            "when": "spear",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:select",
+                "property": "modular_tools:modular_tool_handle",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "modular_tools:item/modular_tool"
+                },
+                "cases": [
+                  {
+                    "when": "modular_tools:wooden_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/wooden_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:stone_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/stone_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:copper_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/copper_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:iron_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/iron_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:golden_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/golden_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:diamond_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/diamond_spear_handle_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:netherite_handle",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/netherite_spear_handle_layer"
+                    }
+                  }
+                ]
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:select",
+                    "property": "modular_tools:modular_tool_handle",
+                    "fallback": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/modular_tool"
+                    },
+                    "cases": [
+                      {
+                        "when": "modular_tools:wooden_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/wooden_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:stone_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/stone_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:copper_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/copper_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:iron_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/iron_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:golden_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/golden_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:diamond_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/diamond_spear_held_handle_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:netherite_handle",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/netherite_spear_held_handle_layer"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:select",
+        "property": "modular_tools:modular_tool_spear",
+        "fallback": {
+          "type": "minecraft:select",
+          "property": "modular_tools:modular_tool_sword",
+          "fallback": {
+            "type": "minecraft:select",
+            "property": "modular_tools:modular_tool_shovel",
+            "fallback": {
+              "type": "minecraft:select",
+              "property": "modular_tools:modular_tool_binding",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/modular_tool"
+              },
+              "cases": [
+                {
+                  "when": "modular_tools:wooden_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/wooden_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:stone_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/stone_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:copper_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/copper_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:iron_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/iron_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:golden_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/golden_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:diamond_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/diamond_binding_layer"
+                  }
+                },
+                {
+                  "when": "modular_tools:netherite_binding",
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/netherite_binding_layer"
+                  }
+                }
+              ]
+            },
+            "cases": [
+              {
+                "when": "standard",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "modular_tools:modular_tool_binding",
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/modular_tool"
+                  },
+                  "cases": [
+                    {
+                      "when": "modular_tools:wooden_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/wooden_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:stone_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/stone_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:copper_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/copper_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:iron_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/iron_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:golden_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/golden_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:diamond_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/diamond_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:netherite_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/netherite_binding_layer"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "when": "shovel",
+                "model": {
+                  "type": "minecraft:select",
+                  "property": "modular_tools:modular_tool_binding",
+                  "fallback": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/modular_tool"
+                  },
+                  "cases": [
+                    {
+                      "when": "modular_tools:wooden_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/wooden_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:stone_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/stone_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:copper_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/copper_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:iron_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/iron_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:golden_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/golden_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:diamond_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/diamond_shovel_binding_layer"
+                      }
+                    },
+                    {
+                      "when": "modular_tools:netherite_binding",
+                      "model": {
+                        "type": "minecraft:model",
+                        "model": "modular_tools:item/netherite_shovel_binding_layer"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "cases": [
+            {
+              "when": "sword",
+              "model": {
+                "type": "minecraft:select",
+                "property": "modular_tools:modular_tool_binding",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "modular_tools:item/modular_tool"
+                },
+                "cases": [
+                  {
+                    "when": "modular_tools:wooden_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/wooden_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:stone_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/stone_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:copper_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/copper_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:iron_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/iron_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:golden_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/golden_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:diamond_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/diamond_sword_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:netherite_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/netherite_sword_binding_layer"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "cases": [
+          {
+            "when": "spear",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:select",
+                "property": "modular_tools:modular_tool_binding",
+                "fallback": {
+                  "type": "minecraft:model",
+                  "model": "modular_tools:item/modular_tool"
+                },
+                "cases": [
+                  {
+                    "when": "modular_tools:wooden_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/wooden_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:stone_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/stone_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:copper_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/copper_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:iron_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/iron_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:golden_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/golden_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:diamond_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/diamond_spear_binding_layer"
+                    }
+                  },
+                  {
+                    "when": "modular_tools:netherite_binding",
+                    "model": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/netherite_spear_binding_layer"
+                    }
+                  }
+                ]
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:select",
+                    "property": "modular_tools:modular_tool_binding",
+                    "fallback": {
+                      "type": "minecraft:model",
+                      "model": "modular_tools:item/modular_tool"
+                    },
+                    "cases": [
+                      {
+                        "when": "modular_tools:wooden_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/wooden_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:stone_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/stone_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:copper_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/copper_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:iron_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/iron_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:golden_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/golden_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:diamond_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/diamond_spear_held_binding_layer"
+                        }
+                      },
+                      {
+                        "when": "modular_tools:netherite_binding",
+                        "model": {
+                          "type": "minecraft:model",
+                          "model": "modular_tools:item/netherite_spear_held_binding_layer"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:select",
+        "property": "modular_tools:modular_tool_head",
+        "fallback": {
+          "type": "minecraft:model",
+          "model": "modular_tools:item/modular_tool"
+        },
+        "cases": [
+          {
+            "when": "modular_tools:wooden_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/wooden_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:stone_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/stone_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:copper_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/copper_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:iron_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/iron_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:golden_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/golden_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:diamond_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/diamond_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:netherite_pickaxe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/netherite_pickaxe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:wooden_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/wooden_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:stone_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/stone_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:copper_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/copper_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:iron_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/iron_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:golden_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/golden_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:diamond_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/diamond_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:netherite_axe_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/netherite_axe_layer"
+            }
+          },
+          {
+            "when": "modular_tools:wooden_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/wooden_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:stone_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/stone_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:copper_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/copper_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:iron_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/iron_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:golden_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/golden_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:diamond_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/diamond_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:netherite_shovel_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/netherite_shovel_layer"
+            }
+          },
+          {
+            "when": "modular_tools:wooden_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/wooden_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:stone_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/stone_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:copper_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/copper_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:iron_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/iron_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:golden_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/golden_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:diamond_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/diamond_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:netherite_sword_head",
+            "model": {
+              "type": "minecraft:model",
+              "model": "modular_tools:item/netherite_sword_head_layer"
+            }
+          },
+          {
+            "when": "modular_tools:wooden_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/wooden_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/wooden_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:stone_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/stone_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/stone_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:copper_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/copper_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/copper_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:iron_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/iron_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/iron_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:golden_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/golden_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/golden_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:diamond_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/diamond_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/diamond_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "when": "modular_tools:netherite_spear_head",
+            "model": {
+              "type": "minecraft:select",
+              "property": "minecraft:display_context",
+              "fallback": {
+                "type": "minecraft:model",
+                "model": "modular_tools:item/netherite_spear_head_layer"
+              },
+              "cases": [
+                {
+                  "when": [
+                    "firstperson_righthand",
+                    "firstperson_lefthand",
+                    "thirdperson_righthand",
+                    "thirdperson_lefthand"
+                  ],
+                  "model": {
+                    "type": "minecraft:model",
+                    "model": "modular_tools:item/netherite_spear_held_head_layer"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 }
